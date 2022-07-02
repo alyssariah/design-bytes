@@ -99,11 +99,13 @@ build
 - Go ahead and git commit to see pre-commit hook work in action
 
 ### Storybook
+
 [Storybook Blog Post](https://storybook.js.org/blog/storybook-for-vite/)
 [@storybook/builder-vite Repo](https://github.com/storybookjs/builder-vite)
 
 - Run `npx sb init --builder @storybook/builder-vite`
 - Change stories array in .storybook/main.js to be:
+
 ```
   "stories": [
     '../src/stories/*.stories.mdx',
@@ -116,8 +118,10 @@ build
     '../src/stories/**/**/**/*.stories.@(js|jsx|ts|tsx)'
   ],
 ```
+
 - Run `npm install @storybook/addon-a11y --save-dev`
 - Add the addon-a11y to the .storybook/main.js
+
 ```
   "addons": [
     "@storybook/addon-links",
@@ -126,6 +130,7 @@ build
     '@storybook/addon-a11y',
   ],
 ```
+
 - Run `npm run storybook`
 - Change css files to scss files
 - Drop scss folder into src folder
@@ -138,8 +143,10 @@ build
 - Visit your chromatic account and add a new project with this new repo
 - Run `npm install --save-dev chromatic`
 - Run `npx chromatic --project-token={TOKEN}` and this should give you the option to create a chromatic script
+- Add in secrets for Project Token and Admin token in Github Repo
 - Push up changes to your remote repo
 - Create a github action called "chromatic.yml" and include the following for automatic deployment to chromatic on push to main
+
 ```
 # Workflow name
 name: 'Chromatic Deployment'
@@ -148,7 +155,7 @@ name: 'Chromatic Deployment'
 on:
   push:
     branches: [ main ]
-    
+
 # List of jobs
 jobs:
   test:
@@ -168,6 +175,7 @@ jobs:
 
 ```
 
+- View Github Action pass with new build in Chromatic
 
 ## Dependencies
 
@@ -181,4 +189,3 @@ jobs:
 - [Prettier](https://prettier.io/)
 - [Husky](https://typicode.github.io/husky/#/)
 - [Chromatic](https://www.chromatic.com/)
-
