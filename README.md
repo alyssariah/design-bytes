@@ -3,6 +3,9 @@
 - [What is this?](#what-is-this)
 - [Tools Used](#tools-used)
 - [Setup New Project](#setup-new-project)
+  - [Vite Project with React](#vite-project-with-react)
+  - [Prettier and ESLint](#prettier-and-eslint)
+  - [Husky, Lint-Staged, and Precommits](#husky,-lint-staged,-and-precommits)
 
 ## What is this?
 
@@ -12,7 +15,7 @@ There are multiple UI libraries out there including Bootstrap, Angular Material,
 
 ### Vite Project with React
 
-[Vite Get Started](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
+[Get Started With Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project)
 
 - Run in CLI `npm create vite@latest`
 - Name your new project
@@ -30,7 +33,7 @@ There are multiple UI libraries out there including Bootstrap, Angular Material,
 
 ### Prettier and ESLint
 
-[Resource](https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b)
+[Dev Prettier and ESLint Setup](https://dev.to/knowankit/setup-eslint-and-prettier-in-react-app-357b)
 
 - Run `npm install eslint --save-dev`
 - Create .eslintrc.json by running `npx eslint --init`
@@ -67,15 +70,18 @@ build
 "lint:fix": "eslint --fix",
 "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
 ```
+
 - Run scripts `npm run format` and `npm run lint` to make sure they are working
 
 ### Husky, Lint-Staged, and Precommits
-[Resource](https://prettier.io/docs/en/precommit.html)
+
+[Prettier Resource](https://prettier.io/docs/en/precommit.html)
 
 - Run `git init`
 - Connect to remote repo on github with `git remote add origin REPO`
 - Run `npx mrm@2 lint-staged` to install husky and lint-staged. this will create a script in package.json and create .husky directory
 - Change lint-staged script in package.json to be:
+
 ```
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -84,8 +90,9 @@ build
     ]
   },
 ```
+
 - Feel free to go into pre-commit file to add tests
-- Go ahead and `git -am" "` to see pre-commit hook work in action
+- Go ahead and git commit to see pre-commit hook work in action
 
 ## Dependencies
 
