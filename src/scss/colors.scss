@@ -1,0 +1,43 @@
+:root {
+  --primary-font: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --secondary-font: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --primary: #0070f3;
+  --primary-light: rgba(0, 118, 255, 0.9);
+  --primary-disabled: rgba(0, 118, 255, 0.5);
+  --primary-shadow: rgb(0 118 255 / 39%);
+  --primary-shadow-hover: rgb(0 118 255 / 23%);
+
+  --secondary: #ffff;
+  --secondary-light: rgba(255, 255, 255, 0.9);
+  --secondary-disabled: rgb(229, 229, 229);
+  --secondary-shadow: rgb(0 0 0 / 10%);
+  --secondary-shadow-hover: rgb(93 93 93 / 23%);
+
+  --tertiary: #ffffff;
+  --quaternary: #000000;
+  --quinary: #61dafb;
+  --light: #ffffff;
+  --dark: #696969;
+}
+
+[data-theme='dark'] {
+  --primary-font: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --secondary-font: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --primary: #0070f3;
+  --primary-light: rgba(0, 118, 255, 0.9);
+  --primary-disabled: rgba(0, 118, 255, 0.5);
+  --primary-shadow: rgb(0 118 255 / 39%);
+  --primary-shadow-hover: rgb(0 118 255 / 23%);
+
+  --secondary: rgb(119, 117, 117);
+  --secondary-light: rgba(133, 133, 133, 0.9);
+  --secondary-disabled: rgb(229, 229, 229);
+  --secondary-shadow: rgb(0 0 0 / 10%);
+  --secondary-shadow-hover: rgb(93 93 93 / 23%);
+
+  --tertiary: #ffffff;
+  --quaternary: #000000;
+  --quinary: #61dafb;
+  --light: #696969;
+  --dark: #ffffff;
+}

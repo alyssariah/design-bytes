@@ -1,0 +1,22 @@
+@import './scss/mixins.scss';
+@import './scss/reset.scss';
+@import './scss/typography.scss';
+@import './scss/colors.scss';
+@import './stories/design-tokens/box-shadows/box-shadow.scss';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+

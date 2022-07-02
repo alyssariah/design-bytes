@@ -1,0 +1,28 @@
+@import '../../../index.scss';
+
+.sb-badge {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
+  font-weight: 800;
+
+  &--small {
+    min-width: 16px; /* pixel unit */
+    padding: 4px 6px; /* pixel unit */
+    font-size: 12px; 
+  }
+
+  &--medium {
+    min-width: 16px; /* pixel unit */
+    padding: 5px 7px; /* pixel unit */
+    font-size: 14px; 
+  }
+
+  &--large {
+    min-width: 16px; /* pixel unit */
+    padding: 6px 8px; /* pixel unit */
+    font-size: 16px; 
+  }
+}
