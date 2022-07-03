@@ -1,7 +1,6 @@
 # Design Bites
 
 - [What is this?](#what-is-this)
-- [Tools Used](#tools-used)
 - [Setup New Project](#setup-new-project)
   - [Vite Project with React](#vite-project-with-react)
   - [Prettier and ESLint](#prettier-and-eslint)
@@ -12,7 +11,7 @@
 
 ## What is this?
 
-There are multiple UI libraries out there including Bootstrap, Angular Material, Material UI, ect. As I was trying to decide on a library, I started to think about a tool called Storybook that allows you to make your own UI Library. I am someone who wants to create new components and reuse them. I also want control over that library to tweak components without a lot of work. Therefore here is my library where I take the code I like and place it here for reusability. This repository is also giving myself the steps to setup a new project and environment to work well with this storybook library.
+There are multiple UI libraries out there including Bootstrap, Angular Material, Material UI, ect. Storybook is a library that allows you to make your own UI Library. I want control over my UI library to tweak components without a lot of work. Therefore here is my library where I take the code I like and place it here for reusability. This repository is also guide to seting up a new project and environment with all my favorite tools.
 
 ## Setup New Project
 
