@@ -82,6 +82,7 @@ build
 
 - Run `git init`
 - Connect to remote repo on github with `git remote add origin REPO`
+- Push code to main branch on remote repo
 - Run `npx mrm@2 lint-staged` to install husky and lint-staged. this will create a script in package.json and create .husky directory
 - Change lint-staged script in package.json to be:
 
