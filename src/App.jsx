@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import logo from './logo.svg';
+import { Routes } from 'react-router-dom';
 import './App.scss';
-import { Button } from './stories/data-display/button/basic-button/Button';
+import { Button } from './components/data-display/button/basic-button/Button';
 
 function App() {
-  const [count, setCount] = useState(0);
   const [theme, setTheme] = useState(
     localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark'
   );
@@ -16,17 +15,12 @@ function App() {
   };
 
   return (
-    <div className="App" data-theme={theme}>
+    <div className="app" data-theme={theme}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
         <Button onClick={switchTheme} label="Toggle Theme"></Button>
       </header>
+      <Routes></Routes>
     </div>
   );
 }

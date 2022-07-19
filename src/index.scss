@@ -1,8 +1,8 @@
 @import './scss/mixins.scss';
 @import './scss/reset.scss';
-@import './scss/typography.scss';
-@import './scss/colors.scss';
-@import './stories/design-tokens/box-shadows/box-shadow.scss';
+@import './scss/typography/typography.scss';
+@import './scss/colors/colors.scss';
+@import './scss/box-shadows/box-shadow.scss';
 
 *,
 *:before,
@@ -12,11 +12,10 @@
 
 body {
   margin: 0;
-  font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-

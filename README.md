@@ -23,12 +23,12 @@ There are multiple UI libraries out there including Bootstrap, Angular Material,
 - Name your new project
 - Choose react for the vite project
 - Go into your new project folder and run `npm install`
-- Run `npm install react-dom sass react-icons`
+- Run `npm install react-dom react-router-dom sass react-icons`
 - Create README.md in your root folder to start documentation
 - Add default server open to vite.config.js [Vite Serever](https://vitejs.dev/config/#server-open)
   ```
   server: {
-    open: '/index.html',
+    open: '/',
   },
   ```
 - In the package.json, change script "dev" to "start"
