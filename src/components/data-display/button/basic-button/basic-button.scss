@@ -1,0 +1,122 @@
+@import '../../../../index.scss';
+
+.sb-basic-button {
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+
+  &--square {
+    border-radius: 5px;
+  }
+
+  &--round {
+    border-radius: 50px;
+  }
+
+  &--primary {
+    &.sb-basic-button--filled {
+      background-color: var(--primary);
+      color: var(--on-primary);
+
+      &:hover {
+        opacity: 0.88;
+      }
+    }
+
+    &.sb-basic-button--outline {
+      border: 1px solid var(--outline);
+      color: var(--primary);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--surface-3);
+      }
+    }
+  }
+
+  &--secondary {
+    &.sb-basic-button--filled {
+      background-color: var(--secondary);
+      color: var(--on-secondary);
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    &.sb-basic-button--outline {
+      border: 1px solid var(--outline);
+      color: var(--secondary);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--surface-3);
+      }
+    }
+  }
+
+  &--small {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 24px;
+    height: 36px;
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 24px;
+    height: 40px;
+    font-weight: 600;
+  }
+
+  &--large {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    padding: 0 24px;
+    height: 44px;
+    font-weight: 600;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+
+    &.sb-basic-button--filled {
+      background-color: var(--disabled);
+      color: var(--outline);
+
+      &:hover {
+        background-color: var(--disabled);
+      }
+    }
+
+    &.sb-basic-button--outline {
+      border: 1px solid var(--disabled);
+      color: var(--outline);
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &--disabled > * {
+    pointer-events: none;
+  }
+}
+
+.start-icon {
+  margin-right: 8px;
+}
+.end-icon {
+  margin-left: 8px;
+}

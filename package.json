@@ -11,8 +11,7 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=4981fcebe355"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^18.0.0",
