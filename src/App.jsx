@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <header className="App-header">
-        <p>Hello Vite + React!</p>
+        <h1 className="h1">Hello Vite + React!</h1>
         <Button onClick={switchTheme} label="Toggle Theme"></Button>
       </header>
       <Routes></Routes>
