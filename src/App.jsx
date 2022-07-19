@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes } from 'react-router-dom';
 import './App.scss';
-import { Button } from './components/data-display/button/basic-button/Button';
+import { BasicButton } from './components/data-display/button/basic-button/BasicButton';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -18,7 +18,8 @@ function App() {
     <div className="app" data-theme={theme}>
       <header className="App-header">
         <h1 className="h1">Hello Vite + React!</h1>
-        <Button onClick={switchTheme} label="Toggle Theme"></Button>
+        <br />
+        <BasicButton onClick={switchTheme} label="Toggle Theme" boxShadow={5}></BasicButton>
       </header>
       <Routes></Routes>
     </div>
