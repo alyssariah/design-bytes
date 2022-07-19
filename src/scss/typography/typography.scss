@@ -26,23 +26,110 @@ h6,
   --secondary-font: 'Source Sans Pro', sans-serif;
 }
 
-h1 {
+.d1 {
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  font-weight: 600;
+}
+
+.d2 {
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.d3 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+h1,
+.h1 {
   font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
-h2 {
+h2,
+.h2 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
   font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 
-h3 {
-  font-size: 21px;
+.s1 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 
-h4 {
-  font-size: 18px;
+.s2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15;
+  font-weight: 600;
 }
 
-p {
-  font-family: 'Libre Franklin', sans-serif;
+.s3 {
   font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  font-weight: 600;
+}
+
+.l1 {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1;
+  font-weight: 600;
+}
+
+.l2 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5;
+  font-weight: 600;
+}
+
+.l3 {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5;
+  font-weight: 600;
+}
+
+.b1 {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.5;
+  font-weight: 400;
+}
+
+.b2 {
+  font-size: 14px;
+  line-height: 20;
+  letter-spacing: 0.25;
+  font-weight: 400;
+}
+
+.b3 {
+  font-size: 12px;
+  line-height: 16;
+  letter-spacing: 0.4;
+  font-weight: 400;
 }
