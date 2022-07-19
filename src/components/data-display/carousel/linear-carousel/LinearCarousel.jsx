@@ -14,7 +14,7 @@ export const LinearCarousel = ({ slides, ...props }) => {
             <>
               <input type="checkbox" aria-label={slide.title} className="faux-ui-facia" key={i} />
               <div className="slide" slide={slide.number} annot={slide.title}>
-                <img src={slide.image} alt={slide.title} />
+                <img src={slide.image} alt="slide image" />
               </div>
             </>
           );

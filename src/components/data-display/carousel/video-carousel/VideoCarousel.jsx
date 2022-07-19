@@ -15,7 +15,7 @@ export const VideoCarousel = ({ videos, backgroundColor, ...props }) => {
               return (
                 <div className="tile" key={i} tabIndex="0">
                   <div className="tile__media">
-                    <img className="tile__img" src={video.image} alt={video.title} />
+                    <img className="tile__img" src={video.image} alt="video title" />
                   </div>
                   <div className="tile__details">
                     <div className="tile__title">{video.title}</div>
