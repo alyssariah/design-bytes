@@ -3,7 +3,7 @@ import { FadeInModal } from './FadeInModal';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Feedback/Modals/FadeInModal',
+  title: 'Components/Feedback/Modals/FadeInModal',
   component: FadeInModal,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

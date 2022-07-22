@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import { BasicButton } from './components/data-display/button/basic-button/BasicButton';
+import { Home } from './pages/home/Home';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -15,14 +15,11 @@ function App() {
   };
 
   return (
-    <div className="app" data-theme={theme}>
-      <header className="App-header">
-        <h1 className="h1">Hello Vite + React!</h1>
-        <br />
-        <BasicButton onClick={switchTheme} label="Toggle Theme" boxShadow={5}></BasicButton>
-      </header>
-      <Routes></Routes>
-    </div>
+    <main className="app" data-theme={theme}>
+      <Routes>
+        <Route exact path="/" element={<Home switchTheme={switchTheme} />}></Route>
+      </Routes>
+    </main>
   );
 }
 

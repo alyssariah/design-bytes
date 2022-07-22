@@ -4,7 +4,7 @@ import { FaCodepen, FaNewspaper, FaConnectdevelop, FaArtstation } from 'react-ic
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Carousel/TestimonialSlider',
+  title: 'Components/Data Display/Carousel/TestimonialSlider',
   component: TestimonialSlider,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

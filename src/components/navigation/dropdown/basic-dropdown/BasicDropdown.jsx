@@ -1,56 +1,56 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './basic-dropdown.scss';
+import { MenuItem } from '../menu-item/MenuItem';
+import { MdPersonOutline } from 'react-icons/md';
 
-export const BasicDropdown = ({ label, link, dropdown, ...props }) => (
-  <span className="sb-dropdown-link" {...props}>
-    <a href={link} className="sb-link">
-      {label}
-    </a>
-    <ul className="sb-dropdown">
-      {dropdown.map((item, i) => {
-        return (
-          <li key={i}>
-            <a href={item.link}>{item.label}</a>
-          </li>
-        );
-      })}
-    </ul>
-  </span>
+export const BasicDropdown = ({ items, boxShadow, ...props }) => (
+  <ul className={`sb-basic-dropdown box-shadow--${boxShadow}`} {...props}>
+    {items.map((item, i) => {
+      return (
+        <MenuItem
+          key={i}
+          icon={item.icon ? item.icon : null}
+          label={item.label}
+          link={item.link}
+          state={item.state}
+        ></MenuItem>
+      );
+    })}
+  </ul>
 );
 
 BasicDropdown.propTypes = {
   /**
-   * Label of link
+   * Box Shadow of dropdown
    */
-  label: PropTypes.string,
-  /**
-   * Link for parent label
-   */
-  link: PropTypes.string,
+  boxShadow: PropTypes.number,
   /**
    * Dropdown of links
    */
-  dropdown: PropTypes.arrayOf(PropTypes.object),
+  items: PropTypes.arrayOf(PropTypes.object),
 };
 
 BasicDropdown.defaultProps = {
-  label: 'Work',
-  link: 'work',
-  dropdown: [
+  boxShadow: 15,
+  items: [
     {
+      icon: <MdPersonOutline />,
       label: 'Web Development',
       link: 'web-development',
     },
     {
+      icon: <MdPersonOutline />,
       label: 'Web Design',
       link: 'web-design',
     },
     {
+      icon: <MdPersonOutline />,
       label: 'Illustration',
       link: 'illustration',
     },
     {
+      icon: <MdPersonOutline />,
       label: 'Iconography',
       link: 'iconography',
     },

@@ -4,7 +4,7 @@ import { FaCodepen, FaSearch } from 'react-icons/fa';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Button/IconButton',
+  title: 'Components/Data Display/Button/IconButton',
   component: IconButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
