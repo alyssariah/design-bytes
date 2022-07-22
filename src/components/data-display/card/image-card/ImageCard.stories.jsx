@@ -3,7 +3,7 @@ import { ImageCard } from './ImageCard';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Card/ImageCard',
+  title: 'Components/Data Display/Card/ImageCard',
   component: ImageCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

@@ -3,7 +3,7 @@ import { LinearCarousel } from './LinearCarousel';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Carousel/LinearCarousel',
+  title: 'Components/Data Display/Carousel/LinearCarousel',
   component: LinearCarousel,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

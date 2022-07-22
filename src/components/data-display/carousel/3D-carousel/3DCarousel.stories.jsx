@@ -3,7 +3,7 @@ import { ThreeDCarousel } from './3DCarousel';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Carousel/3D Carousel',
+  title: 'Components/Data Display/Carousel/3D Carousel',
   component: ThreeDCarousel,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

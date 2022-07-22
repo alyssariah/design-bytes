@@ -3,7 +3,7 @@ import React from 'react';
 import { BasicHeader } from './BasicHeader';
 
 export default {
-  title: 'Navigation/Header/BasicHeader',
+  title: 'Components/Navigation/Header/BasicHeader',
   component: BasicHeader,
   argTypes: {
     backgroundColor: { control: 'color' },

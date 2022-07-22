@@ -16,16 +16,6 @@
     background-color: rgba(0, 0, 0, 0.04);
   }
 
-  &--primary {
-    color: var(--primary);
-
-    @include disabled(var(--light), var(--primary-disabled), var(--primary-shadow)); 
-  }
-
-  &--secondary {
-    @include disabled(var(--dark), var(--secondary-disabled), var(--secondary-shadow)); 
-  }
-
   &--small {
     padding: 6px 8px;
     font-size: 1.125rem;
@@ -38,6 +28,6 @@
 
   &--large {
     padding: 8px 10px;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 }

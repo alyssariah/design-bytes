@@ -3,7 +3,7 @@ import { BasicCard } from './BasicCard';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Card/BasicCard',
+  title: 'Components/Data Display/Card/BasicCard',
   component: BasicCard,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

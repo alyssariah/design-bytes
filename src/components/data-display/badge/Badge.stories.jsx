@@ -3,7 +3,7 @@ import { Badge } from './Badge';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Badge/Badge',
+  title: 'Components/Data Display/Badge/Badge',
   component: Badge,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {

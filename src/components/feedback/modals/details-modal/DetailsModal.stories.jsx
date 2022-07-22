@@ -3,7 +3,7 @@ import { DetailsModal } from './DetailsModal';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Feedback/Modals/DetailsModal',
+  title: 'Components/Feedback/Modals/DetailsModal',
   component: DetailsModal,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},

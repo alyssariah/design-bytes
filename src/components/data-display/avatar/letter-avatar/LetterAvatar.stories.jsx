@@ -3,7 +3,7 @@ import { LetterAvatar } from './LetterAvatar';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Data Display/Avatar/LetterAvatar',
+  title: 'Components/Data Display/Avatar/LetterAvatar',
   component: LetterAvatar,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
