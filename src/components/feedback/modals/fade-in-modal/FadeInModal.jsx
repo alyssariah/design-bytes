@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './fade-in-modal.scss';
-import { OutlineButton } from '../../../data-display/button/outline-button/OutlineButton';
+import { BasicButton } from '../../../data-display/button/basic-button/BasicButton';
 
 /**
  * Fade in modal as a reusable component
@@ -77,9 +77,16 @@ FadeInModal.propTypes = {
 };
 
 FadeInModal.defaultProps = {
-  triggerButton: <OutlineButton label="Open the dialog" />,
-  rejectButton: <OutlineButton label="No, I'll reconsider" shape="round" />,
-  confirmButton: <OutlineButton label="Yes, let's do it!" shape="round" primary={true} />,
+  triggerButton: <BasicButton label="Open the dialog" />,
+  rejectButton: (
+    <BasicButton
+      label="No, I'll reconsider"
+      shape="round"
+      configuration={'outline'}
+      primary={false}
+    />
+  ),
+  confirmButton: <BasicButton label="Yes, let's do it!" shape="round" primary={true} />,
   buttonText: 'Open the dialog',
   buttonPrimary: 'primary',
   buttonSize: 'large',

@@ -8,13 +8,14 @@ export const BasicDropdown = ({ items, boxShadow, ...props }) => (
   <ul className={`sb-basic-dropdown box-shadow--${boxShadow}`} {...props}>
     {items.map((item, i) => {
       return (
-        <MenuItem
-          key={i}
-          icon={item.icon ? item.icon : null}
-          label={item.label}
-          link={item.link}
-          state={item.state}
-        ></MenuItem>
+        <li key={i}>
+          <MenuItem
+            icon={item.icon ? item.icon : null}
+            label={item.label}
+            link={item.link}
+            state={item.state}
+          ></MenuItem>
+        </li>
       );
     })}
   </ul>
