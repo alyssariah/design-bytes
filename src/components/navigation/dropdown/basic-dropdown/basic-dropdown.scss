@@ -4,18 +4,6 @@
   border-radius: 5px;
 
   li {
-    clear: both;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-    border-style: none;
-
-    &:hover {
-      background-color: var(--surface-1);
-    }
-  }
-
-  a {
     &:hover {
       background-color: var(--surface-1);
     }
