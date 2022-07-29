@@ -2,6 +2,42 @@ import { Meta } from '@storybook/addon-docs';
 
 <Meta title="Design Tokens/Typography" />
 
+<style>{`
+    .css-1iqt098 {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px;
+        margin: 25px 0px 40px;
+        padding: 30px 20px;
+    }
+
+    .css-1n19cwd {
+         display: flex;
+         flex-direction: row;
+         -webkit-box-align: baseline;
+         align-items: baseline;
+         align-items: center;
+    }
+
+    .css-1n19cwd:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .css-101es37 {
+        margin-right: 30px;
+        font-size: 12px;
+        color: rgba(51, 51, 51, 0.6);
+        flex-shrink: 0;
+        width: 40px;
+    }
+
+    .css-1d0tddh {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: 'Montserrat', sans-serif;
+    }
+`}</style>
+
 # Typography
 
 Typography is about usability in a website. It is about emotion.
@@ -29,3 +65,87 @@ Choosing a font should align with brand and content. Some designs use one typefa
 - H2: 26 pt (24–28pt)
 - H3: 22 pt (20–24pt)
 - H4: 20 pt (18–22pt)
+
+## Typography Display Example
+
+<p> Choosed typefaces and font sizes </p>
+
+### Font Family: Montserrat (sans), Quador Display (serif)
+
+<div class="docblock-typeset css-1iqt098">
+<div class="css-1n19cwd">
+    <div class="css-101es37">text-small<br/>12px</div>
+    <div class="css-1d0tddh" style={{ fontSize: '12px', lineHeight: '16px' }}>Was he a beast if music could move him so?</div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    text-large
+    <br />
+    16px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '16px', lineHeight: '20px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    body-small
+    <br />
+    16px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '16px', lineHeight: '19px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    body-medium
+    <br />
+    20px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '20px', lineHeight: '24px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    body-large
+    <br />
+    24px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '24px', lineHeight: '36px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    h3
+    <br />
+    32px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '32px', lineHeight: '45px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+  <div class="css-101es37">
+    h2
+    <br />
+    38px
+  </div>
+  <div class="css-1d0tddh" style={{ fontSize: '38px', lineHeight: '47px' }}>
+    Was he a beast if music could move him so?
+  </div>
+</div>
+
+<div class="css-1n19cwd">
+    <div class="css-101es37">h1<br/>46px</div>
+    <div class="css-1d0tddh" style={{ fontSize: '46px', lineHeight: '54px' }}>Was he a beast if music could move him so?</div>
+</div>
+</div>
