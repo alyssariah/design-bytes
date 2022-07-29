@@ -23,7 +23,7 @@
       color: var(--on-primary);
 
       &:hover {
-        opacity: 0.88;
+        opacity: 0.8;
       }
     }
 
@@ -33,7 +33,7 @@
       background-color: transparent;
 
       &:hover {
-        background-color: var(--surface-3);
+        background-color: var(--surface-5);
       }
     }
   }
@@ -44,7 +44,7 @@
       color: var(--on-secondary);
 
       &:hover {
-        opacity: 0.85;
+        opacity: 0.8;
       }
     }
 
@@ -54,13 +54,22 @@
       background-color: transparent;
 
       &:hover {
-        background-color: var(--surface-3);
+        background-color: var(--surface-5);
       }
     }
   }
 
   &--small {
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 24px;
+    height: 30px;
+    font-weight: 600;
+  }
+
+  &--medium {
+    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.5px;
     padding: 0 24px;
@@ -68,21 +77,12 @@
     font-weight: 600;
   }
 
-  &--medium {
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-    padding: 0 24px;
-    height: 40px;
-    font-weight: 600;
-  }
-
   &--large {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.1px;
     padding: 0 24px;
-    height: 44px;
+    height: 40px;
     font-weight: 600;
   }
 
