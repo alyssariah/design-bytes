@@ -7,10 +7,6 @@ export default {
   title: 'Components/Navigation/Dropdown/MenuItem',
   component: MenuItem,
   argTypes: {},
-  parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
-  },
 };
 
 const Template = (args) => <MenuItem {...args} />;

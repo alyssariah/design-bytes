@@ -9,10 +9,10 @@
   --secondary-container: #FFDAD8;
   --on-secondary-container: #2C1515;
 
-  --teritary: #745A2F;
-  --on-teritary: #ffffff;
-  --teritary-container: #FFDEAD;
-  --on-teritary-container: #281900;
+  --tertiary: #745A2F;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #FFDEAD;
+  --on-tertiary-container: #281900;
 
   --error: #BA1A1A;
   --on-error: #ffffff;
@@ -51,10 +51,10 @@
   --secondary-container: #5D3F3F;
   --on-secondary-container: #FFDAD8;
 
-  --teritary: #E4C18D;
-  --on-teritary: #412D05;
-  --teritary-container: #5A4319;
-  --on-teritary-container: #FFDEAD;
+  --tertiary: #E4C18D;
+  --on-tertiary: #412D05;
+  --tertiary-container: #5A4319;
+  --on-tertiary-container: #FFDEAD;
 
   --error: #FFB4AB;
   --on-error: #690005;
@@ -78,6 +78,54 @@
 
   --navigation-bar: rgba(168, 53, 60, 0.05);
   --disabled: rgba(31, 31, 31, 0.12);
+
+  color-scheme: dark;
+}
+
+[data-theme='blue'] {
+  --primary-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Source Sans Pro', sans-serif;
+  --navigation-height: 60px;
+
+  --primary: #9fc9ff;
+  --on-primary: #00315c;
+  --primary-container: #004882;
+  --on-primary-container: #d2e4ff;
+
+  --secondary: #bbc7db;
+  --on-secondary: #263140;
+  --secondary-container: #3c4858;
+  --on-secondary-container: #d7e3f8;
+
+  --teritary: #d8bde4;
+  --on-teritary: #3c2947;
+  --teritary-container: #533f5e;
+  --on-teritary-container: #f5d9ff;
+
+  --error: #ffb4a9;
+  --on-error: #680003;
+  --error-container: #930006;
+  --on-error-container: #ffdad4;
+
+  --background: #1b1b1b;
+  --on-background: #e3e2e6;
+  --surface: #1b1b1b;
+  --on-surface: #e3e2e6;
+
+  --surface--variant: #43474e;
+  --on-surface--variant: #c3c6cf;
+  --outline: #8d9199;
+
+  --surface-1: rgba(0, 96, 171, 0.05);
+  --surface-2: rgba(0, 96, 171, 0.08);
+  --surface-3: rgba(0, 96, 171, 0.11);
+  --surface-4: rgba(0, 96, 171, 0.12);
+  --surface-5: rgba(0, 96, 171, 0.14);
+
+  --on-opacity: rgba(255, 255, 255, 0.1);
+  --opacity: (0, 0, 0, 0.5);
+
+  --navigation-bar: rgba(0, 96, 171, 0.05);
 
   color-scheme: dark;
 }

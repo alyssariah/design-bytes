@@ -4,6 +4,10 @@
 @import './design-tokens/colors/colors.scss';
 @import './design-tokens/box-shadows/box-shadow.scss';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *:before,
 *:after {

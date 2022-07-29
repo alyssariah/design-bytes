@@ -2,6 +2,118 @@ import { Meta } from '@storybook/addon-docs';
 
 <Meta title="Design Tokens/Colors" />
 
+<style>{`
+  .css-syxe49 {
+       display: flex;
+       flex-direction: row;
+       -webkit-box-align: center;
+       align-items: center;
+       padding-bottom: 20px;
+       font-weight: 700;
+       color: rgba(51, 51, 51, 0.6);
+   }
+
+   .css-bp0xxt {
+       flex: 0 0 30%;
+   }
+
+   .css-1rr4qq7 {
+       flex: 1 1 0%;
+   }
+
+   .css-2qy8by {
+       flex: 0 0 30%;
+       line-height: 20px;
+       margin-top: 5px;
+   }
+
+   .css-1cic1f4 {
+       font-weight: 700;
+       color: rgb(51, 51, 51);
+   }
+
+   .css-1nkxwxu {
+       color: rgba(51, 51, 51, 0.8);
+   }
+
+   .css-1yp4ln {
+       display: flex;
+       align-items: flex-start;
+   }
+
+   .css-3jgpxx {
+       flex: 1 1 0%;
+       display: flex;
+       flex-direction: row;
+   }
+
+   .css-sw5zqw {
+       display: flex;
+       flex-direction: column;
+       flex: 1 1 0%;
+       position: relative;
+       margin-bottom: 30px;
+   }
+
+   .css-wk618k {
+       box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+       display: flex;
+       flex-direction: row;
+       height: 50px;
+       margin-bottom: 5px;
+       border-radius: 4px;
+       background: repeating-linear-gradient(-45deg, rgb(204, 204, 204), rgb(204, 204, 204) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255) 16px) padding-box white;
+       border-width: 1px;
+       border-style: solid;
+       border-color: rgba(0, 0, 0, 0.1);
+       border-image: initial;
+       overflow: hidden;
+   }
+
+   .css-1u3ctkr {
+        position: relative;
+        flex: 1 1 0%;
+    }
+
+    .css-1u3ctkr::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: "";
+    }
+
+   .css-1xhj18k {
+        display: flex;
+        flex-direction: row;
+    }
+   .css-1xrb7qh {
+       flex: 1 1 0%;
+       text-align: center;
+       font-family: ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace;
+       font-size: 12px;
+       line-height: 1;
+       overflow: hidden;
+       color: rgba(51, 51, 51, 0.6);
+   }
+
+   .css-kstvt {
+       position: relative;
+       flex: 1 1 0%;
+   }
+
+   .css-kstvt::before {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100%;
+       background: #636262;
+       content: "";
+   }
+`}</style>
+
 # Choosing Colors
 
 Customize your components with your color scheme! Do you already have a brand with colors? Great! Just add those colors in or come up with your color scheme now. See this [article](https://elementor.com/blog/website-color-schemes/?utm_source=google&utm_medium=cpc&utm_campaign=10759652828&utm_term=&gclid=Cj0KCQjwg_iTBhDrARIsAD3Ib5i1i1VEjkxEaxB9HQ9-1IybR2AFUYCeD2pXQGPXPqhKwHIa38knUlYaAnSpEALw_wcB) for advice on choosing colors. The following information and images are taken from this artice and quickly displayed for you.
@@ -109,3 +221,74 @@ Color variables are held within the colors.scss file. It has primary, secondary,
 <img src="https://elementor.com/cdn-cgi/image/f=auto,w=720/marketing/wp-content/uploads/sites/9/2020/07/JOCO-1.png" />
 <img src="https://elementor.com/cdn-cgi/image/f=auto,w=720/marketing/wp-content/uploads/sites/9/2020/07/embacy.png" />
 <img src="https://elementor.com/cdn-cgi/image/f=auto,w=720/marketing/wp-content/uploads/sites/9/2020/07/odopod-visual.png" />
+
+<br />
+
+## Color Display Example
+
+<br />
+
+<div class="css-syxe49">
+  <div class="css-bp0xxt">Name</div>
+  <div class="css-1rr4qq7">Swatches</div>
+</div>
+
+<div class="css-1yp4ln">
+<div class="css-2qy8by">
+    <div class="css-1cic1f4">.background</div>
+    <div class="css-1nkxwxu"></div>
+</div>
+
+<div class="css-3jgpxx">
+    <div class="css-sw5zqw">
+        <div class="css-wk618k">
+            <div title="#000" class="css-1u3ctkr" style={{ background: '#F2F0E9' }}></div>
+        </div>
+        <div class="css-1xhj18k">
+            <div title="#000" class="css-1xrb7qh">
+                <div>#F2F0E9</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="css-1yp4ln">
+<div class="css-2qy8by">
+    <div class="css-1cic1f4">.primary</div>
+    <div class="css-1nkxwxu"></div>
+</div>
+
+<div class="css-3jgpxx">
+    <div class="css-sw5zqw">
+        <div class="css-wk618k">
+            <div title="#000" class="css-1u3ctkr" style={{ background: '#008065' }}></div>
+        </div>
+        <div class="css-1xhj18k">
+            <div title="#000" class="css-1xrb7qh">
+                <div>#008065</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="css-1yp4ln">
+<div class="css-2qy8by">
+    <div class="css-1cic1f4">.surface-1</div>
+    <div class="css-1nkxwxu"></div>
+</div>
+
+<div class="css-3jgpxx">
+    <div class="css-sw5zqw">
+        <div class="css-wk618k">
+            <div title="#000" class="css-1u3ctkr" style={{ backgroundColor: 'rgba(255, 255, 255, 0.35)' }}></div>
+        </div>
+        <div class="css-1xhj18k">
+            <div title="#000" class="css-1xrb7qh">
+                <div>rgba(255, 255, 255, 0.35)</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
