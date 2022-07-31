@@ -1,8 +1,8 @@
-@import './design-tokens/mixins.scss';
-@import './design-tokens/reset.scss';
-@import './design-tokens/typography/typography.scss';
-@import './design-tokens/colors/colors.scss';
-@import './design-tokens/box-shadows/box-shadow.scss';
+@import './scss/reset.scss';
+@import './scss/typography/typography.scss';
+@import './scss/colors/colors.scss';
+@import './scss/box-shadows/box-shadow.scss';
+@import './scss/dimensions/dimensions.scss';
 
 @tailwind base;
 @tailwind components;
