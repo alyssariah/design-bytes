@@ -1,0 +1,100 @@
+.sb-switch {
+  width: 64px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 10px;
+  transition: 0.25s all ease-in-out;
+
+  .sb-toggle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+    transform: translateX(0);
+    transition: 0.25s all ease-in-out;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.light {
+    .sb-toggle {
+      transform: translateX(130%);
+    }
+  }
+
+  &--sky {
+    background-image: url('../../../assets/switch/switch-sky-dark.png');
+
+    &.light {
+      background-image: url('../../../assets/switch/switch-sky-light.png');
+
+      .sb-toggle {
+        background-image: url('../../../assets/switch/sun-switch.png');
+        background-size: cover;
+        transform: translateX(110%);
+      }
+    }
+
+    .sb-toggle {
+      background-image: url('../../../assets/switch/moon-switch.png');
+      background-size: cover;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &--land {
+    background-image: url('../../../assets/switch/switch-land-dark.png');
+
+    &.light {
+      background-image: url('../../../assets/switch/switch-land-light.png');
+    }
+
+    .sb-toggle {
+      background-color: #ffffff;
+    }
+  }
+
+  &--fruit {
+    background-image: url('../../../assets/switch/fruit-lemon.png');
+
+    &.light {
+      background-image: url('../../../assets/switch/fruit-orange.png');
+
+      .sb-toggle {
+        background-image: url('../../../assets/switch/lemon.png');
+        background-size: cover;
+        transform: translateX(110%);
+      }
+    }
+
+    .sb-toggle {
+      background-image: url('../../../assets/switch/orange.png');
+      background-size: cover;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &--3d {
+    box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.1);
+    background-color: #efefef;
+
+    &.light {
+      background-color: var(--primary);
+    }
+
+    .sb-toggle {
+      background: linear-gradient(180deg, #ffffff 0%, #e8eaea 100%);
+      filter: drop-shadow(2px 1px 6px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
