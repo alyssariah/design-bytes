@@ -29,7 +29,7 @@ module.exports = {
       primaryContainer: 'var(--primary-container)',
       onPrimaryContainer: 'var(--on-primary-container)',
       secondary: 'var(--secondary)',
-      onSecondary: 'var(-on-secondary)',
+      onSecondary: 'var(--on-secondary)',
       secondaryContainer: 'var(--secondary-container)',
       onSecondaryContainer: 'var(--on-secondary-container)',
       tertiary: 'var(--tertiary)',
