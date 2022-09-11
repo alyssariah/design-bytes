@@ -47,7 +47,7 @@ FlickityCarousel.defaultProps = {
 
   carouselSlides: [
     {
-      src: 'src/assets/controller-1.png',
+      src: '/demo-carousel/controller-1.png',
       alt: 'carousel-image',
     },
   ],

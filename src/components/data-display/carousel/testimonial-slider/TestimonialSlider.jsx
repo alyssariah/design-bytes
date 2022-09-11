@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './testimonial-slider.scss';
+import styles from './testimonial-slider.module.scss';
 import { FaCodepen, FaNewspaper, FaConnectdevelop, FaArtstation } from 'react-icons/fa';
+import clsx from 'clsx';
 
 /**
  * Primary UI component for user interaction
  */
 export const TestimonialSlider = ({ cards, backgroundColor, color, ...props }) => {
   return (
-    <div className="sb-tslider" style={{ backgroundColor, color }} {...props}>
+    <div className={styles['sb-tslider']} style={{ backgroundColor, color }} {...props}>
       {cards.map(function (card, i) {
         return (
           <input
@@ -17,18 +18,20 @@ export const TestimonialSlider = ({ cards, backgroundColor, color, ...props }) =
             name="slider"
             title={'slide' + (i + 1)}
             defaultChecked={i === 0}
-            className="sb-tslider__nav"
+            className={styles['sb-tslider__nav']}
             aria-label={card.title}
           />
         );
       })}
-      <div className="sb-tslider__inner">
+      <div className={styles['sb-tslider__inner']}>
         {cards.map(function (card, i) {
           return (
-            <div className="sb-tslider__contents" key={i}>
-              {card.icon}
-              <h2 className="sb-tslider__caption">{card.title}</h2>
-              <p className="sb-tslider__txt">{card.description}</p>
+            <div className={styles['sb-tslider__contents']} key={i}>
+              <div className={styles['sb-tslider__image']}>{card.icon}</div>
+              <p className={clsx(styles['sb-tslider__caption'], 'font-semibold text-title-md')}>
+                {card.title}
+              </p>
+              <p className={styles['sb-tslider__txt']}>{card.description}</p>
             </div>
           );
         })}

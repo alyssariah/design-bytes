@@ -1,25 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './linear-carousel.scss';
+import styles from './linear-carousel.module.scss';
 
 /**
  * Primary UI component for user interaction
  */
 export const LinearCarousel = ({ slides, ...props }) => {
   return (
-    <div className="sb-linear-carousel" {...props}>
+    <div className={styles['sb-linear-carousel']} {...props}>
       {slides &&
         slides.map(function (slide, i) {
           return (
             <>
-              <input type="checkbox" aria-label={slide.title} className="faux-ui-facia" key={i} />
-              <div className="slide" slide={slide.number} annot={slide.title}>
+              <input
+                type="checkbox"
+                aria-label={slide.title}
+                className={styles['faux-ui-facia']}
+                key={i}
+              />
+              <div className={styles['slide']} slide={slide.number} annot={slide.title}>
                 <img src={slide.image} alt="slide image" />
               </div>
             </>
           );
         })}
-      <div className="counter" count={slides ? slides.length : 5}>
+      <div className={styles['counter']} count={slides ? slides.length : 5}>
         {' '}
         / {slides ? slides.length : 5}
       </div>

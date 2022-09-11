@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './menu-item.scss';
+import styles from './menu-item.module.scss';
+import clsx from 'clsx';
 
 export const MenuItem = ({ icon, label, state, link, ...props }) => (
-  <a href={{ link }} className={`sb-dropdown-menu-item sb-dropdown-menu-item--${state}`} {...props}>
+  <a
+    href={{ link }}
+    className={clsx(styles['sb-dropdown-menu-item'], styles[`sb-dropdown-menu-item--${state}`])}
+    {...props}
+  >
     {icon && icon}
-    <span className="t2">{label}</span>
+    <span className="title-md">{label}</span>
   </a>
 );
 

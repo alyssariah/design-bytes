@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './switch.scss';
+import styles from './switch.module.scss';
+import clsx from 'clsx';
 
 /**
  * Primary UI component for user interaction
@@ -17,10 +18,13 @@ export const Switch = ({ switchTheme, mode }) => {
 
   return (
     <div
-      className={`sb-switch ${toggle === 'light' ? 'light' : 'dark'} sb-switch--${mode}`}
+      className={clsx(styles['sb-switch'], styles[`sb-switch--${mode}`], {
+        [styles.light]: toggle === 'light',
+        [styles.dark]: toggle === 'dark',
+      })}
       onClick={toggleTheme}
     >
-      <div className="sb-toggle"></div>
+      <div className={styles['sb-toggle']}></div>
     </div>
   );
 };

@@ -26,25 +26,25 @@ export const Default = Template.bind({});
 Default.args = {
   cards: [
     {
-      icon: <FaCodepen className="sb-tslider__image" />,
+      icon: <FaCodepen />,
       title: 'codepen',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!',
     },
     {
-      icon: <FaNewspaper className="sb-tslider__image" />,
+      icon: <FaNewspaper />,
       title: 'newspaper',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!',
     },
     {
-      icon: <FaConnectdevelop className="sb-tslider__image" />,
+      icon: <FaConnectdevelop />,
       title: 'connectdevelop',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!',
     },
     {
-      icon: <FaArtstation className="sb-tslider__image" />,
+      icon: <FaArtstation />,
       title: 'artstation',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!',

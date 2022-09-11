@@ -47,7 +47,7 @@ PhoneDisplay.propTypes = {
 
 PhoneDisplay.defaultProps = {
   phoneCase: {
-    src: 'src/assets/phone.png',
+    src: '/phone-cases/phone.png',
     alt: 'phone case',
   },
   phoneContent: {

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './basic-dropdown.scss';
+import styles from './basic-dropdown.module.scss';
 import { MenuItem } from '../menu-item/MenuItem';
 import { MdPersonOutline } from 'react-icons/md';
+import clsx from 'clsx';
 
 export const BasicDropdown = ({ items, boxShadow, ...props }) => (
-  <ul className={`sb-basic-dropdown box-shadow--${boxShadow}`} {...props}>
+  <ul className={clsx(styles['sb-basic-dropdown'], `box-shadow--${boxShadow}`)} {...props}>
     {items.map((item, i) => {
       return (
         <li key={i}>

@@ -31,20 +31,20 @@
   }
 
   &--sky {
-    background-image: url('../../../assets/switch/switch-sky-dark.png');
+    background-image: url('/switch/switch-sky-dark.png');
 
     &.light {
-      background-image: url('../../../assets/switch/switch-sky-light.png');
+      background-image: url('/switch/switch-sky-light.png');
 
       .sb-toggle {
-        background-image: url('../../../assets/switch/sun-switch.png');
+        background-image: url('/switch/sun-switch.png');
         background-size: cover;
         transform: translateX(110%);
       }
     }
 
     .sb-toggle {
-      background-image: url('../../../assets/switch/moon-switch.png');
+      background-image: url('/switch/moon-switch.png');
       background-size: cover;
       width: 28px;
       height: 28px;
@@ -52,10 +52,10 @@
   }
 
   &--land {
-    background-image: url('../../../assets/switch/switch-land-dark.png');
+    background-image: url('/switch/switch-land-dark.png');
 
     &.light {
-      background-image: url('../../../assets/switch/switch-land-light.png');
+      background-image: url('/switch/switch-land-light.png');
     }
 
     .sb-toggle {
@@ -64,20 +64,20 @@
   }
 
   &--fruit {
-    background-image: url('../../../assets/switch/fruit-lemon.png');
+    background-image: url('/switch/fruit-lemon.png');
 
     &.light {
-      background-image: url('../../../assets/switch/fruit-orange.png');
+      background-image: url('/switch/fruit-orange.png');
 
       .sb-toggle {
-        background-image: url('../../../assets/switch/lemon.png');
+        background-image: url('/switch/lemon.png');
         background-size: cover;
         transform: translateX(110%);
       }
     }
 
     .sb-toggle {
-      background-image: url('../../../assets/switch/orange.png');
+      background-image: url('/switch/orange.png');
       background-size: cover;
       width: 28px;
       height: 28px;

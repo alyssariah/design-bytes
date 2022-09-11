@@ -20,39 +20,39 @@ Default.args = {
   },
   carouselSlides: [
     {
-      src: 'src/assets/demo-carousel/controller-1.png',
+      src: '/demo-carousel/controller-1.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-2.png',
+      src: '/demo-carousel/controller-2.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-3.png',
+      src: '/demo-carousel/controller-3.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-4.png',
+      src: '/demo-carousel/controller-4.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-5.png',
+      src: '/demo-carousel/controller-5.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-6.png',
+      src: '/demo-carousel/controller-6.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-7.png',
+      src: '/demo-carousel/controller-7.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-8.png',
+      src: '/demo-carousel/controller-8.png',
       alt: 'carousel-image',
     },
     {
-      src: 'src/assets/demo-carousel/controller-9.png',
+      src: '/demo-carousel/controller-9.png',
       alt: 'carousel-image',
     },
   ],

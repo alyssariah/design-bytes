@@ -13,7 +13,7 @@ const Template = (args) => <PhoneDisplay {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   phoneCase: {
-    src: 'src/assets/phone.png',
+    src: '/phone-cases/phone.png',
     alt: 'phone case',
   },
   phoneContent: {
