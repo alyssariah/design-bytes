@@ -9,10 +9,10 @@ export const FlipScale = ({ animation, ...props }) => {
   return (
     <div className="flex justify-center items-center h-[100vh] flip-perspective">
       <div className={animation + ' anim-object active'} {...props}>
-        <div className="front face bg-primary text-onPrimary flex justify-center items-center rounded box-shadow--4">
+        <div className="front face bg-primary text-on-primary flex justify-center items-center rounded box-shadow--4">
           <div className="text-[36px]">A</div>
         </div>
-        <div className="back face bg-secondary text-onPrimary flex justify-center items-center rounded box-shadow--4">
+        <div className="back face bg-secondary text-on-secondary flex justify-center items-center rounded box-shadow--4">
           <div className="text-[36px]">B</div>
         </div>
       </div>

@@ -11,7 +11,7 @@ export const RotateScale = ({ animation, ...props }) => {
       <div
         className={
           animation +
-          ' w-32 h-32 bg-primary text-onPrimary flex justify-center items-center rounded box-shadow--4'
+          ' w-32 h-32 bg-primary text-on-primary flex justify-center items-center rounded box-shadow--4'
         }
         {...props}
       >
