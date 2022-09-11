@@ -8,10 +8,10 @@
   user-select: none;
 
   .line {
-    fill:none;
+    fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width: 4.5;
+    stroke: #000;
+    stroke-width: 3;
     stroke-linecap: round;
   }
 }

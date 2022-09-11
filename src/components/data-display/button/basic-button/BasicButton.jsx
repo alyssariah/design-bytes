@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './basic-button.scss';
+import styles from './basic-button.module.scss';
 
 /**
  * Primary button component with sizes and color
  */
 export const BasicButton = ({
-  primary,
+  color,
   size,
   label,
   shape,
@@ -18,27 +18,25 @@ export const BasicButton = ({
   onClick,
   ...props
 }) => {
-  const mode = primary ? 'sb-basic-button--primary' : 'sb-basic-button--secondary';
-
   return (
     <button
       type="button"
       className={[
-        'sb-basic-button',
-        `sb-basic-button--${size}`,
-        `sb-basic-button--${shape}`,
-        `sb-basic-button--${configuration}`,
-        disabled && 'sb-basic-button--disabled',
+        styles['sb-basic-button'],
+        styles[`sb-basic-button--${size}`],
+        styles[`sb-basic-button--${shape}`],
+        styles[`sb-basic-button--${configuration}`],
+        styles[`sb-basic-button--${color}`],
+        disabled && styles['sb-basic-button--disabled'],
         `${configuration === 'filled' ? `box-shadow--${boxShadow}` : ''}`,
-        mode,
       ].join(' ')}
       disabled={disabled}
       onClick={onClick}
       {...props}
     >
-      {startIcon}
+      {startIcon && <span className="mr-2">{startIcon}</span>}
       {label}
-      {endIcon}
+      {endIcon && <span className="ml-2">{endIcon}</span>}
     </button>
   );
 };
@@ -57,9 +55,9 @@ BasicButton.propTypes = {
    */
   configuration: PropTypes.oneOf(['filled', 'outline']),
   /**
-   * If color should primary or secondary
+   * How large should the button be?
    */
-  primary: PropTypes.bool,
+  color: PropTypes.oneOf(['primary', 'secondary', 'primary-container']),
   /**
    * How large should the button be?
    */
@@ -87,7 +85,7 @@ BasicButton.propTypes = {
 };
 
 BasicButton.defaultProps = {
-  primary: true,
+  color: 'primary',
   configuration: 'filled',
   size: 'large',
   onClick: undefined,

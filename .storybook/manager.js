@@ -1,6 +1,6 @@
 import { addons } from '@storybook/addons';
 import Theme from './theme';
-import favicon from '../src/logo.png';
+import favicon from '/src/logo.png';
 
 addons.setConfig({
   theme: Theme,

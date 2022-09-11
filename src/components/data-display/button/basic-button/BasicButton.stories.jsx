@@ -29,7 +29,7 @@ Elevation.args = {
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
-  primary: false,
+  color: 'secondary',
 };
 
 export const Outline = Template.bind({});

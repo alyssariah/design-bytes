@@ -1,0 +1,46 @@
+.outline-input {
+  @apply border-[0.5px] rounded-md bg-transparent;
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:focus-within {
+    border: 0.5px solid var(--primary);
+  }
+}
+
+.filled-input {
+  @apply border-b-[0.5px] rounded-sm bg-surface--variant pt-4;
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:not(:placeholder-shown) {
+  }
+
+  &:disabled {
+    @apply bg-disabled;
+  }
+
+  &:focus-within {
+    border-bottom: 1px solid var(--primary);
+  }
+}
+
+.filled-label:focus-within > span,
+.filled-input:not(:placeholder-shown) + span {
+  transform: translateY(24px);
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 10px;
+}
+
+.outline-label:focus-within > span,
+.outline-input:not(:placeholder-shown) + span {
+  transform: translateY(11px);
+  background-color: #ffffff;
+  color: var(--primary);
+  font-size: 12px;
+}

@@ -1,0 +1,35 @@
+.outline-select {
+  @apply border-[0.5px] rounded-md bg-transparent;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url('/src/assets/chevron_down.svg');
+  background-position: 99.5% 54%;
+  background-repeat: no-repeat;
+}
+
+.filled-select {
+  @apply border-b-[0.5px] rounded-sm bg-surface--variant pt-4;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: url('/src/assets/chevron_down.svg');
+  background-position: 99.5% 54%;
+  background-repeat: no-repeat;
+
+  &:disabled {
+    @apply bg-disabled;
+  }
+}
+
+.filled-label:checked > span,
+.filled-select:valid + span {
+  transform: translateY(24px);
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.outline-label:checked > span,
+.outline-select:valid + span {
+  transform: translateY(11px);
+  background-color: #ffffff;
+  font-size: 12px;
+}
