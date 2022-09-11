@@ -53,6 +53,7 @@ module.exports = {
       'navigation': 'var(--navigation-bar)',
       'text-helper': '#5E6368',
       'disabled': 'var(--disabled)',
+      'dialog-background': 'rgba(0, 0, 0, .2)',
     },
     fontFamily: {
       sans: ['Source Sans Pro', 'sans-serif'],

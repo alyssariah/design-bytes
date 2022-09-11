@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './basic-button.module.scss';
+import clsx from 'clsx';
 
 /**
  * Primary button component with sizes and color
@@ -16,20 +17,24 @@ export const BasicButton = ({
   boxShadow,
   configuration,
   onClick,
+  stretch,
   ...props
 }) => {
   return (
     <button
       type="button"
-      className={[
+      className={clsx(
         styles['sb-basic-button'],
         styles[`sb-basic-button--${size}`],
         styles[`sb-basic-button--${shape}`],
         styles[`sb-basic-button--${configuration}`],
         styles[`sb-basic-button--${color}`],
-        disabled && styles['sb-basic-button--disabled'],
-        `${configuration === 'filled' ? `box-shadow--${boxShadow}` : ''}`,
-      ].join(' ')}
+        {
+          [styles['sb-basic-button--disabled']]: disabled,
+          [`box-shadow--${boxShadow}`]: configuration === 'filled',
+          ['w-[100%]']: stretch,
+        }
+      )}
       disabled={disabled}
       onClick={onClick}
       {...props}
@@ -71,6 +76,10 @@ BasicButton.propTypes = {
    */
   disabled: PropTypes.bool,
   /**
+   * Stretch
+   */
+  stretch: PropTypes.bool,
+  /**
    * Start Icon
    */
   startIcon: PropTypes.element,
@@ -94,4 +103,5 @@ BasicButton.defaultProps = {
   disabled: false,
   startIcon: null,
   endIcon: null,
+  stretch: false,
 };
