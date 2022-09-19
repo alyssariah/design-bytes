@@ -7,20 +7,21 @@ import { AiOutlineCheck } from 'react-icons/ai';
 export const Checkbox = ({ label, name, config, status, checkedStatus }) => {
   const [checked, setChecked] = useState(checkedStatus);
   return (
-    <div
-      className="flex items-center space-x-2 hover:cursor-pointer h-[20px]"
-      onClick={() => {
-        status != 'disabled' ? setChecked(!checked) : '';
-      }}
-    >
+    <div className="flex items-center space-x-2 h-[20px]">
       <div
-        className={clsx('w-[20px] h-[20px] flex justify-center items-center', {
-          ['border-[#AEAEB2] border-[1px] border-solid']: !checked || config == 'transparent',
-          ['bg-primary']: checked && config !== 'transparent',
-          ['bg-transparent']: checked && config == 'transparent',
-          ['rounded-[4px]']: config != 'sharp',
-          ['border-disabled']: status == 'disabled',
-        })}
+        className={clsx(
+          'w-[20px] h-[20px] flex justify-center items-center hover:cursor-pointer ',
+          {
+            ['border-[#AEAEB2] border-[1px] border-solid']: !checked || config == 'transparent',
+            ['bg-primary']: checked && config !== 'transparent',
+            ['bg-transparent']: checked && config == 'transparent',
+            ['rounded-[4px]']: config != 'sharp',
+            ['border-disabled']: status == 'disabled',
+          }
+        )}
+        onClick={() => {
+          status != 'disabled' ? setChecked(!checked) : '';
+        }}
       >
         {checked && (
           <AiOutlineCheck
@@ -38,7 +39,7 @@ export const Checkbox = ({ label, name, config, status, checkedStatus }) => {
         name={name}
         value={label}
         className="hidden"
-        checked={checked}
+        defaultChecked={checked}
       />
       {label && (
         <label
