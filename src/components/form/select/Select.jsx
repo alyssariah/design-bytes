@@ -74,12 +74,15 @@ export const Select = ({
           })}
         </select>
         <span
-          className={clsx('absolute left-[10px] text-[14px] duration-300 px-[5px]', {
-            ['translate-y-[32px]']: config == 'outline',
-            ['translate-y-[35px]']: config == 'filled',
-            ['text-disabled']: status == 'disabled',
-            ['ml-6']: leadingIcon,
-          })}
+          className={clsx(
+            'absolute left-[10px] text-[14px] duration-300 px-[5px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%]',
+            {
+              ['translate-y-[32px]']: config == 'outline',
+              ['translate-y-[35px]']: config == 'filled',
+              ['text-disabled']: status == 'disabled',
+              ['ml-6']: leadingIcon,
+            }
+          )}
           onClick={manuallyOpenSelect}
         >
           {label} {required && '*'}

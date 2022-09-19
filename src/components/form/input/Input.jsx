@@ -9,6 +9,7 @@ import clsx from 'clsx';
 export const Input = ({
   config,
   label,
+  type,
   name,
   required,
   status,
@@ -41,7 +42,7 @@ export const Input = ({
           </div>
         )}
         <input
-          type="text"
+          type={type}
           ref={textInput}
           name={name}
           className={clsx('w-[100%] py-[10px] mt-[20px] border-outline outline-none', {
@@ -67,12 +68,15 @@ export const Input = ({
           </div>
         )}
         <span
-          className={clsx('absolute left-[10px] text-[14px] duration-300 px-[5px]', {
-            ['translate-y-[32px]']: config == 'outline',
-            ['translate-y-[35px]']: config == 'filled',
-            ['text-disabled']: status == 'disabled',
-            ['ml-6']: leadingIcon,
-          })}
+          className={clsx(
+            'absolute left-[10px] text-[14px] duration-300 px-[5px] whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%]',
+            {
+              ['translate-y-[32px]']: config == 'outline',
+              ['translate-y-[35px]']: config == 'filled',
+              ['text-disabled']: status == 'disabled',
+              ['ml-6']: leadingIcon,
+            }
+          )}
           onClick={() => textInput.current.focus()}
         >
           {label} {required && '*'}
@@ -105,6 +109,10 @@ Input.propTypes = {
    */
   label: PropTypes.string,
   /**
+   * Input type
+   */
+  type: PropTypes.oneOf(['text', 'email', 'tel', 'url']),
+  /**
    * Input name
    */
   name: PropTypes.string,
@@ -133,6 +141,7 @@ Input.propTypes = {
 Input.defaultProps = {
   config: 'outline',
   label: 'Full Name',
+  type: 'text',
   name: 'fullName',
   required: true,
   status: 'enabled',
